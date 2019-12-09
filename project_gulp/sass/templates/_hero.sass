@@ -1,12 +1,12 @@
 .hero
+  position: relative
   display: flex
   flex-direction: column
   justify-content: center
-  position: relative
   background: $dark url('../img/image 4.3.jpg') no-repeat center / cover
   height: 100vh 
   color: $light
-  padding: 100px
+  padding-top: 100px
   &::before
     content: ''
     position: absolute
@@ -16,32 +16,30 @@
     top: 0
     left: 0
   &__button 
-    padding: 15px 18px
+    padding: 18px 23px
     margin-right: 1.3rem
-
   &__content
-    max-width: 47.857rem
     position: relative
+    max-width: 47.857rem
     margin-left: 4.28rem
   &__text 
     font-size: 1.5rem
     max-width: 500px
-    line-height: 130%
+    line-height: 140%
     margin-right: 20px
     margin-top: 17.4px
     margin-bottom: 3rem
   &__instagram 
     position: absolute
-    max-width: 100px
-    width: 80px
+    max-width: 80px
     height: 100%
     top: 0
     left: 0
   &__scroll-down
+    position: absolute
     display: flex
     align-items: center
     justify-content: center
-    position: absolute
     min-width: 17.6rem
     min-height: 6.92rem
     background-color: $dark
@@ -50,17 +48,17 @@
     color: $light
     left: 0
     bottom: 0
+    font-size: 14px
     &:after 
       content: ''
-      width: 30px
-      height: 30px
+      width: 29px
+      height: 29px
       border: 1px solid
       border-color: $primary
       border-radius: 50%
-      margin-left: 12px
+      margin-left: 14px
       background: url(../img/Vector.svg) no-repeat center
 .instagram
-  display: flex
   background-color: $dark
   display: flex
   justify-content: center
@@ -88,5 +86,11 @@
   font-weight: normal
   &--primary
     color: $primary  
-  
+.button 
+  &--outline
+    padding: 16.5px 38px
+    font-size: 0.95rem
+
+
+
     
