@@ -367,6 +367,9 @@ html {
       background-color: #e3b873;
       margin: 0 10px; }
 
+img {
+  max-width: 100%; }
+
 .header {
   background-color: #131313;
   padding: 24px 0;
@@ -429,10 +432,9 @@ html {
     max-width: 47.857rem;
     margin-left: 4.28rem; }
   .hero__text {
-    font-size: 1.5rem;
+    font-size: 2rem;
     max-width: 500px;
-    line-height: 140%;
-    margin-right: 20px;
+    line-height: 131%;
     margin-top: 17.4px;
     margin-bottom: 3rem; }
   .hero__instagram {
@@ -499,6 +501,20 @@ html {
   padding: 16.5px 38px;
   font-size: 0.95rem; }
 
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col {
+  flex-basis: 32%; }
+
+.card__text {
+  background: #FFFFFF;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  max-width: 23.6rem;
+  margin: 0 auto; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; } }
@@ -519,7 +535,7 @@ html {
     color: #fff;
     text-decoration: none; }
   .title {
-    font-style: 1.64rem; }
+    font-size: 1.64rem; }
   .hero__scroll-down {
     display: none; }
   .hero__text {
