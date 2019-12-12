@@ -1,4 +1,6 @@
 .modal 
+  opacity: 0
+  visibility: hidden
   position: fixed
   z-index: 199
   left: 0
@@ -11,11 +13,14 @@
   display: flex
   align-items: center
   justify-content: center
+  &--visible
+    opacity: 1
+    visibility: visible
   &__dialog
     position: relative
     max-width: 36.36rem
     background: $dark url('../img/modal/bg-lines.svg') no-repeat center
-    padding: 2.357rem 3.5rem 1.928rem
+    padding: 2.2rem 3.5rem 1.928rem 3.7rem
     color: $light
   &__close
     position: absolute
@@ -32,15 +37,19 @@
     font-size: 1.357rem
     text-align: center
     margin: 0
-    margin-bottom: 2.428rem
+    margin-bottom: 1.9rem
+    line-height: 145%
   &__form
     display: flex
     flex-direction: column
   &__input
     margin-bottom: 3.428rem
+    &::nth-child(2)
+      margin-bottom: 0rem
     &:last-of-type
-      margin-bottom: 1rem
+      margin-bottom: 0rem
   &__policy 
     margin-bottom: 2.7rem
   &__button 
     align-self: flex-end
+    padding: 18px 49px

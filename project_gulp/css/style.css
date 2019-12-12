@@ -360,7 +360,8 @@ template {
 
 .policy__label {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.1rem; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -444,7 +445,7 @@ img {
   color: #e3b873; }
 
 .contacts__button {
-  padding: 11.5px 20.5px; }
+  padding: 11.5px 23.5px; }
 
 .contacts__phone {
   margin-right: 45px; }
@@ -467,18 +468,18 @@ img {
     top: 0;
     left: 0; }
   .hero__button {
-    padding: 18px 23px;
+    padding: 18px 28px;
     margin-right: 1.3rem; }
   .hero__content {
     position: relative;
     max-width: 47.857rem;
     margin-left: 4.28rem; }
   .hero__text {
-    font-size: 1.5rem;
+    font-size: 1.57rem;
     max-width: 500px;
-    line-height: 131%;
-    margin-top: 17.4px;
-    margin-bottom: 3rem; }
+    line-height: 140%;
+    margin-top: 0.9rem;
+    margin-bottom: 3.1rem; }
   .hero__instagram {
     position: absolute;
     max-width: 80px;
@@ -533,14 +534,14 @@ img {
   margin: 0;
   font-family: "Yeseva One", cursive;
   text-transform: uppercase;
-  font-size: 2.75rem;
-  line-height: 1.3;
+  font-size: 2.857rem;
+  line-height: 1.4;
   font-weight: normal; }
   .title--primary {
     color: #e3b873; }
 
 .button--outline {
-  padding: 16.5px 38px;
+  padding: 16.5px 44px;
   font-size: 0.95rem; }
 
 .types__section-title {
@@ -622,7 +623,7 @@ img {
   font-family: 'Yeseva One', cursive;
   font-size: 1.29rem;
   margin-top: 0;
-  margin-bottom: 0.7rem; }
+  margin-bottom: 1.4rem; }
 
 .card1__list {
   padding: 0 0 0 1rem;
@@ -644,6 +645,13 @@ img {
   padding: 1.214rem 4.4rem;
   font-weight: normal;
   margin-top: 3rem; }
+
+.section-title__description {
+  margin: auto;
+  margin-top: 1.2rem;
+  font-size: 1.45rem;
+  line-height: 135.84%;
+  max-width: 52.9rem; }
 
 .row {
   display: flex;
@@ -671,15 +679,11 @@ img {
   .section-title__heading {
     color: #131313; }
   .section-title__description {
-    color: #131313; }
-  .section-title__description {
-    margin: auto;
-    margin-top: 1rem;
-    font-size: 1.45rem;
-    line-height: 135.84%;
-    max-width: 52.9rem; } }
+    color: #131313; } }
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   z-index: 199;
   left: 0;
@@ -692,11 +696,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: center; }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
   .modal__dialog {
     position: relative;
     max-width: 36.36rem;
     background: #131313 url("../img/modal/bg-lines.svg") no-repeat center;
-    padding: 2.357rem 3.5rem 1.928rem;
+    padding: 2.2rem 3.5rem 1.928rem 3.7rem;
     color: #fff; }
   .modal__close {
     position: absolute;
@@ -713,18 +720,22 @@ img {
     font-size: 1.357rem;
     text-align: center;
     margin: 0;
-    margin-bottom: 2.428rem; }
+    margin-bottom: 1.9rem;
+    line-height: 145%; }
   .modal__form {
     display: flex;
     flex-direction: column; }
   .modal__input {
     margin-bottom: 3.428rem; }
+    .modal__input::nth-child(2) {
+      margin-bottom: 0rem; }
     .modal__input:last-of-type {
-      margin-bottom: 1rem; }
+      margin-bottom: 0rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
-    align-self: flex-end; }
+    align-self: flex-end;
+    padding: 18px 49px; }
 
 @media screen and (max-width: 1200px) {
   html {
